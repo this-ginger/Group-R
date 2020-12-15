@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CM2104 Spotify Web API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">  
+        <a class="navbar-brand" >MUSIFY</a>
+       <div class="collapse navbar-collapse " id="navbarSupportedContent">  
+           <ul class="navbar-nav mr-4">
+            <button class="btn"><i class="fa fa-bars"></i></button>
+            </ul> 
+       </div>
+    </nav>
+
+    <div class="container">        
+        <form action="">
+            <input type="hidden" id='hidden_token'>
+            <div class="flex-container">
+            <div>
+                <label for="Genre" class="form-label col">Genre:</label>
+                <select name="" id="select_genre" class="custom-select">
+                    <option>Select...</option>                    
+                </select>
+            </div>
+            <div>
+                <label for="Genre" class="form-label col">Playlists:</label>
+                <select name="" id="select_playlist" class="custom-select">
+                    <option>Select...</option>                    
+                </select>
+            </div>                  
+            <div>
+                <button type="submit" id="btn_submit" class="btn btn-success col-sm-12">Search</button>
+            </div> 
+            </div>         
+        </form>        
+        <div class="row">
+            <div class="col">
+                <div class="list-group song-list">
+                    
+                </div>                                             
+            </div>
+            <div class="offset-md-1 col-sm-4" id="song-detail">                
+            </div>
+        </div>   
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="api.js" type="text/javascript"></script>
+</body>
+</html>
